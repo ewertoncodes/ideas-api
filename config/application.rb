@@ -24,8 +24,8 @@ module IdeaboardApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://myideaboard.herokuapp.com'
-        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options]
+        origins 'http://localhost:8080'
+        resource '*', headers: :any, methods: [:get, :post, :put, :delete]
       end
     end
   end
