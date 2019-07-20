@@ -21,12 +21,5 @@ module IdeaboardApi
   class Application < Rails::Application
     config.load_defaults 5.2
     config.api_only = true
-
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'https://myideaboard.herokuapp.com'
-        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options, :head]
-      end
-    end
   end
 end
