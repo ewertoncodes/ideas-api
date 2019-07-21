@@ -7,8 +7,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://myideaboard.herokuapp.com'
-
+    
+    #origins 'https://myideaboard.herokuapp.com'
+    origins 'https://awesome-shockley-1029de.netlify.com'
     resource '*',
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
