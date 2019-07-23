@@ -1,24 +1,30 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone o projeto:
 
-Things you may want to cover:
+```bash 
+git clone https://github.com/ewertonorg/ideas-api.git 
+```
+Acesse o diretorio:
 
-* Ruby version
+```bash 
+cd ideas-api
+```
 
-* System dependencies
+Instale as dependências:
 
-* Configuration
+```bash
+bundle install
+```
 
-* Database creation
+Rode os testes:
 
-* Database initialization
+```bash
+rspec spec
+```
 
-* How to run the test suite
+ Levante sua aplicação com o comando:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails s
+```
+---
