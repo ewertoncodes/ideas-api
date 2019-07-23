@@ -16,6 +16,10 @@ Instale as dependências:
 bundle install
 ```
 
+```bash
+rails db:setup
+```
+
 Rode os testes:
 
 ```bash
