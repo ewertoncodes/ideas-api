@@ -1,5 +1,5 @@
 class Api::V1::IdeasController < ApplicationController
-  before_action :set_idea, only: [:update, :destroy]
+  before_action :set_idea, only: [:update, :show, :destroy]
 
   def index
     @ideas = Idea.order(created_at: :desc)
@@ -11,6 +11,10 @@ class Api::V1::IdeasController < ApplicationController
     @idea = Idea.create! idea_params
 
     json_response @idea, :created
+  end
+
+  def show
+    json_response @idea
   end
 
   def update
